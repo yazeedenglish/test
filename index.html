@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>english-test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>english-test</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+
+    <div id="fixed-timer"><span id="time">...</span></div>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>اختبار تحديد مستوى اللغة الانجليزية</title>
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+      <style>
+        /* Main body styling */
+        body {
+          font-family: 'Cairo', sans-serif;
+          background-color: #d7f2ff;
+          color: #333;
+          margin: 0;
+          padding: 15px;
+        }
+
+        h1 {
+          color: #002f47;
+          font-size: 23px;
+          text-align: center;
+        }
+
+        /* Adjust styling for small devices (mobile phones) */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 18px;
+            /* Smaller font size for mobile devices */
+          }
+        }
+
+        /* Adjust styling for medium devices (tablets) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+          h1 {
+            font-size: 20px;
+            /* Medium font size for tablets */
+          }
+        }
+
+        /* Adjust styling for large devices (desktops) */
+        @media (min-width: 1200px) {
+          h1 {
+            font-size: 25px;
+            /* Larger font size for desktops */
+          }
+        }
+
+        .question {
+          color: #A9A9A9 background-color: #fffdff;
+          border-radius: 8px;
+          padding: 15px;
+          margin-bottom: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adjust styling for small devices (mobile phones) */
+        @media (max-width: 768px) {
+          .question {
+            padding: 10px;
+            /* Reduced padding on mobile devices */
+            margin-bottom: 15px;
+            /* Smaller margin */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Lighter shadow for mobile */
+          }
+        }
+
+        /* Adjust styling for medium to large devices (tablets, desktops) */
+        @media (min-width: 769px) {
+          .question {
+            padding: 15px;
+            /* Standard padding */
+            margin-bottom: 20px;
+            /* Standard margin */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Regular shadow */
+          }
+        }
+
+        /* Adjust styling for very large devices (large screens) */
+        @media (min-width: 1200px) {
+          .question {
+            padding: 20px;
+            /* Larger padding for large screens */
+            margin-bottom: 30px;
+            /* Larger margin for better spacing */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            /* Stronger shadow for large screens */
+          }
+        }
+
+        .question p {
+          font-size: 1.125rem;
+          /* Default font size based on root font size */
+          color: #004364;
+          position: relative;
+          top: -10px;
+        }
+
+        @media (max-width: 768px) {
+          .question p {
+            font-size: 1rem;
+            /* Smaller font size for mobile devices */
+          }
+        }
+
+        @media (min-width: 769px) {
+          .question p {
+            font-size: 1.125rem;
+            /* Default font size for larger devices (tablets, desktops) */
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .question p {
+            font-size: 1.25rem;
+            /* Increase font size for very large screens */
+          }
+        }
+
+        input[type="radio"] {
+          margin: 5px;
+        }
+
+        /* Button styling */
+        button {
+          background-color: var(--primary-color);
+          color: #fff;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          display: block;
+          margin: 20px auto 0;
+          transition: var(--transition);
+          position: relative;
+          top: -39px;
+        }
+
+        button:hover,
+        .submit-btn:hover {
+          background-color: var(--secondary-color);
+          transform: scale(1.2);
+        }
+
+        /* Result styling */
+        .result {
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 24px;
+          color: #01579b;
+          text-align: center;
+          position: relative;
+          top: -60.5px;
+        }
+
+        .instructions-message {
+          font-size: 18px;
+          color: #01579D;
+          text-align: center;
+          position: relative;
+          top: -57.5px;
+        }
+
+        button:hover {
+          background-color: #0288d1;
+        }
+
+        /* Layout for quiz */
+        .quiz-container {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 70px;
+          background-color: #ffffff;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          position: relative;
+          top: 50px;
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <img src="https://raw.githubusercontent.com/yazeeedstore/english-test/refs/heads/main/Untitled%20design%20(30).png" alt="test-english" class="side-image" />
+      <h1>اختبار تحديد مستوى اللغة الانجليزية</h1>
+      <a href="https://yazeeed-store.com" class="subtext">Yazeed English الاختبار مقدم من موقع</a>
+
+      <div class="quiz-container">
+        <form id="cefr-test">
+          <!-- Question 1 - A1 -->
+          <div class="question">
+            <p>Choose the correct sentence:</p>
+            <input type="radio" name="q1" value="0">She like pizza<br>
+            <input type="radio" name="q1" value="1">She likes pizza<br>
+            <input type="radio" name="q1" value="0">She liking pizza<br>
+            <input type="radio" name="q1" value="0">She liked pizza<br>
+          </div>
+
+          <!-- Question 2 - A2 -->
+          <div class="question">
+            <p>Where is the book?</p>
+            <input type="radio" name="q2" value="0">It’s under the wall<br>
+            <input type="radio" name="q2" value="0">It’s between on the floor<br>
+            <input type="radio" name="q2" value="1">It’s beside to the chair<br>
+            <input type="radio" name="q2" value="0">It’s on the table<br>
+          </div>
+
+          <!-- Question 3 - B1 -->
+          <div class="question">
+            <p>Choose the correct sentence:</p>
+            <input type="radio" name="q3" value="1">The man who is wearing a blue hat is my uncle<br>
+            <input type="radio" name="q3" value="0">The man which is wearing a blue hat is my uncle<br>
+            <input type="radio" name="q3" value="0">The man whom is wearing a blue hat is my uncle<br>
+            <input type="radio" name="q3" value="0">The man whose is wearing a blue hat is my uncle<br>
+          </div>
+
+          <!-- Question 4 - C1 -->
+          <div class="question">
+            <p>Choose the sentence with correct parallel structure:</p>
+            <input type="radio" name="q4" value="0">She enjoys reading, to cook, and hiking.<br>
+            <input type="radio" name="q4" value="1">She enjoys reading, cooking, and hiking.<br>
+            <input type="radio" name="q4" value="0">She enjoys reading, cooking, and to hike.<br>
+            <input type="radio" name="q4" value="0">She enjoys to read, cooking, and hiking.<br>
+          </div>
+
+          <!-- Question 5 - A1 -->
+          <div class="question">
+            <p>Read the text and answer:</p>
+            <yy>“Tom has a dog. His dog’s name is Max. Max likes to play in the park.”</yy>
+            <p>What does Max like to do?</p>
+            <input type="radio" name="q5" value="0">Eat food<br>
+            <input type="radio" name="q5" value="1">Play in the park<br>
+            <input type="radio" name="q5" value="0">Sleep at home<br>
+            <input type="radio" name="q5" value="0">Walk to school<br>
+          </div>
+
+          <!-- Question 6 - A2 -->
+          <div class="question">
+            <p>Read the text and answer:</p>
+            <yy>“Sarah goes to the library every weekend because she loves reading. She usually borrows three books.”</yy>
+            <p>Why does Sarah go to the library?</p>
+            <input type="radio" name="q6" value="0">To meet friends<br>
+            <input type="radio" name="q6" value="1">To borrow books<br>
+            <input type="radio" name="q6" value="0">To work<br>
+            <input type="radio" name="q6" value="0">To use the computer<br>
+          </div>
+
+          <!-- Question 7 - B1 -->
+          <div class="question">
+            <p>Read the text and answer:</p>
+            <yy>“James loves traveling. He has visited over 30 countries and enjoys meeting new people. He also writes a blog about his experiences.”</yy>
+            <p>What does James write about?</p>
+            <input type="radio" name="q7" value="0">His favorite food<br>
+            <input type="radio" name="q7" value="1">His travel experiences<br>
+            <input type="radio" name="q7" value="0">His job<br>
+            <input type="radio" name="q7" value="0">His friends<br>
+          </div>
+
+          <!-- Question 8 - C1 -->
+          <div class="question">
+            <p>Read the text and answer:</p>
+            <yy>“The artist’s work was both innovative and controversial. Critics praised her unique style, while others questioned its appeal to the general audience.”</yy>
+            <p>What can be inferred about the artist’s work?</p>
+            <input type="radio" name="q8" value="0">Everyone loved her art.<br>
+            <input type="radio" name="q8" value="0">Her art was very traditional.<br>
+            <input type="radio" name="q8" value="1">Her art divided opinions.<br>
+            <input type="radio" name="q8" value="0">Her art was ignored by critics.<br>
+          </div>
+
+          <!-- Question 9 - A1 -->
+          <div class="question">
+            <p>Listen and choose the correct answer:</p>
+
+            <audio controls>
+              <source src="https://audio.jukehost.co.uk/iKcoK9ZXQE5BWN1EzRdbGHNQrxEg2oPA" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+
+            <p>Where is James originally from?</p>
+            <input type="radio" name="q9" value="0">United States<br>
+            <input type="radio" name="q9" value="0">United Kingdom<br>
+            <input type="radio" name="q9" value="1">Australia<br>
+            <input type="radio" name="q9" value="0">Canada<br>
+          </div>
+
+          <!-- Question 10 - A2 -->
+          <div class="question">
+            <p>Listen and choose the correct answer:</p>
+
+            <audio controls>
+              <source src="https://audio.jukehost.co.uk/7WI5lZJNFu2AdeDz7D3SW6vfo0FJPTcn" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+
+            <p>How often does he go running?</p>
+            <input type="radio" name="q10" value="0">Every day<br>
+            <input type="radio" name="q10" value="1">Three times a week<br>
+            <input type="radio" name="q10" value="0">Once a week<br>
+            <input type="radio" name="q10" value="0">Only on weekends<br>
+          </div>
+
+          <!-- Question 11 - B1 -->
+          <div class="question">
+            <p>Listen and choose the correct answer:</p>
+
+            <audio controls>
+              <source src="https://audio.jukehost.co.uk/864jpbQWk0lMKqsQs6hBTp6FxilGf9xV" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+
+            <p>Where does Mark work now?</p>
+            <input type="radio" name="q11" value="0">In a café<br>
+            <input type="radio" name="q11" value="0">In a small restaurant<br>
+            <input type="radio" name="q11" value="1">In a hotel<br>
+            <input type="radio" name="q11" value="0">In a bakery<br>
+          </div>
+
+          <!-- Question 12 - C1 -->
+          <div class="question">
+            <p>Listen and choose the correct answer:</p>
+
+            <audio controls>
+              <source src="https://audio.jukehost.co.uk/3luOyeT6nlIvlDuQszmx8SG7NfZETInW" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+
+            <p>What is the main issue discussed in the passage?</p>
+            <input type="radio" name="q12" value="1">The challenges of online learning and the need for social interaction<br>
+            <input type="radio" name="q12" value="0">The benefits of online learning for accessibility<br>
+            <input type="radio" name="q12" value="0">The role of technology in enhancing traditional classrooms<br>
+            <input type="radio" name="q12" value="0">The advantages of studying at home<br>
+          </div>
+
+          <!-- Question 13 - A1 -->
+          <div class="question">
+            <p>Choose the correct word for this sentence:</p>
+            <p>"I need a ______ to write."</p>
+            <input type="radio" name="q13" value="1">pen<br>
+            <input type="radio" name="q13" value="0">book<br>
+            <input type="radio" name="q13" value="0">chair<br>
+            <input type="radio" name="q13" value="0">phone<br>
+          </div>
+
+          <!-- Question 14 - B1 -->
+          <div class="question">
+            <p>Which word means the same as ‘happy’?</p>
+            <input type="radio" name="q14" value="0">Angry<br>
+            <input type="radio" name="q14" value="1">Joyful<br>
+            <input type="radio" name="q14" value="0">Tired<br>
+            <input type="radio" name="q14" value="0">Dizzy<br>
+          </div>
+
+          <!-- Question 15 - C1 -->
+          <div class="question">
+            <p>Choose the best word to complete the sentence:</p>
+            <p>"The scientist’s theory was highly ______, gaining both admiration and criticism from her peers."</p>
+            <input type="radio" name="q15" value="0">conventional<br>
+            <input type="radio" name="q15" value="1">innovative<br>
+            <input type="radio" name="q15" value="0">trivial<br>
+            <input type="radio" name="q15" value="0">predictable<br>
+          </div>
+        </form>
+      </div>
+
+      <button type="button" onclick="calculateScore()" class="submit-btn">Submit</button>
+
+      <div class="result" id="result"></div>
+      <div class="instructions-message" id="instructions-message"></div>
+
+    </body>
+
+  </html>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+<script src="./script.js"></script>
+
+</body>
+
+</html>
