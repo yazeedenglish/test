@@ -57,12 +57,12 @@ function calculateScore() {
       "https://yazeedenglish.com/vXbgBrO/?utm_source=aff&utm_campaign=UbeUI"; // B1 level
     message = "B1 مستواك";
     instructionsMessage = "سيتم تحويلك الى كتاب الانجليزية للمتوسطين";
-  } else if (points >= 10 && points <= 13) {
+  } else if (points >= 10 && points <= 14) {
     redirectUrl =
       "https://yazeedenglish.com/vXbgBrO/?utm_source=aff&utm_campaign=UbeUI"; // B2 level
     message = "B2 مستواك";
     instructionsMessage = "سيتم تحويلك الى كتاب الانجليزية للمتوسطين";
-  } else if (points >= 14 && points <= 15) {
+  } else if (points === 15) {
     redirectUrl = "https://yazeedenglish.com"; // C1 level
     message = "C1 مستواك";
   }
